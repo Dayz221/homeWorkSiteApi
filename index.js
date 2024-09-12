@@ -21,7 +21,7 @@ app.use("/api/auth", authRouter)
 app.use("/api/tasks", taskRouter)
 app.use("/api/files", fileRouter)
 
-app.get('/api', (req, res) => res.status(200).send({ message: "homework site and telegram-bot api" }))
+app.get('/', (req, res) => res.status(200).send({ message: "homework site and telegram-bot api" }))
 
 app.listen(PORT, async (err) => {
     if (err) return console.log(color.red(err))
