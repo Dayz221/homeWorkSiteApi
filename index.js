@@ -45,4 +45,4 @@ app.listen(PORT, async (err) => {
     console.log(color.green(`Server started on http://localhost:${PORT}`))
 })    
 
-export const handler = serverless(app);
+export default app
